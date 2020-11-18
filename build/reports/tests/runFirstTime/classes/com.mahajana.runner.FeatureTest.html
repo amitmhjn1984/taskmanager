@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.mahajana.runner.FeatureTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.mahajana.runner.FeatureTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.mahajana.runner.html">com.mahajana.runner</a> &gt; FeatureTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>@test
+Feature: Login and Validation check for Task Manager Application
+
+  #    Given user Access Task manager application via browser
+  #validate Landing page
+  @test1
+  Scenario Outline: Sign-in to TaskManger application and perform different validations ?[90m# com/mahajana/runner/features/taskManagerTest.feature:9?[0m
+    ?[36mGiven ?[0m?[36muser Access Task manager application via browser?[0m
+    ?[36mWhen ?[0m?[36muser inputs &quot;&lt;email&gt;&quot; in the field &quot;email&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;password&gt;&quot; in the field &quot;password&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Login&quot; button?[0m
+    ?[36mThen ?[0m?[36muser should land on &quot;My day&quot; page?[0m
+
+    Examples: 
+Loading page selector for: My day
+
+  @test1 @test
+  Scenario Outline: Sign-in to TaskManger application and perform different validations ?[90m# com/mahajana/runner/features/taskManagerTest.feature:18?[0m
+    ?[32mGiven ?[0m?[32muser Access Task manager application via browser?[0m                              ?[90m# MyStepdefs.accessTaskManagerUrl()?[0m
+    ?[32mWhen ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1memail?[0m?[32m&quot;?[0m                                        ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mpassword?[0m?[32m&quot;?[0m                                      ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mLogin?[0m?[32m&quot; button?[0m                                                       ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mThen ?[0m?[32muser should land on &quot;?[0m?[32m?[1mMy day?[0m?[32m&quot; page?[0m                                              ?[90m# MyStepdefs.userShouldLandOnPage(String)?[0m
+
+  # Validate Add Task
+  @test1
+  Scenario Outline: Validate add and remove a task                      ?[90m# com/mahajana/runner/features/taskManagerTest.feature:23?[0m
+    ?[36mGiven ?[0m?[36muser Access Task manager application via browser?[0m
+    ?[36mWhen ?[0m?[36muser inputs &quot;&lt;email&gt;&quot; in the field &quot;email&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;password&gt;&quot; in the field &quot;password&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Login&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser should land on &quot;My day&quot; page?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskTitle&gt;&quot; in the field &quot;Task title&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskDescription&gt;&quot; in the field &quot;Task description&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Add&quot; button?[0m
+    ?[36mThen ?[0m?[36muser should see &quot;taskTitle&quot; on the page?[0m
+
+    Examples: 
+Loading page selector for: My day
+
+  @test1 @test
+  Scenario Outline: Validate add and remove a task                     ?[90m# com/mahajana/runner/features/taskManagerTest.feature:37?[0m
+    ?[32mGiven ?[0m?[32muser Access Task manager application via browser?[0m             ?[90m# MyStepdefs.accessTaskManagerUrl()?[0m
+    ?[32mWhen ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1memail?[0m?[32m&quot;?[0m                       ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mpassword?[0m?[32m&quot;?[0m                     ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mLogin?[0m?[32m&quot; button?[0m                                      ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser should land on &quot;?[0m?[32m?[1mMy day?[0m?[32m&quot; page?[0m                              ?[90m# MyStepdefs.userShouldLandOnPage(String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mAddTask?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask title?[0m?[32m&quot;?[0m                ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mTask to be Added?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask description?[0m?[32m&quot;?[0m ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mAdd?[0m?[32m&quot; button?[0m                                        ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mThen ?[0m?[32muser should see &quot;?[0m?[32m?[1mtaskTitle?[0m?[32m&quot; on the page?[0m                       ?[90m# MyStepdefs.userShouldSeeOnThePage(String)?[0m
+
+  # Validate Remove Task
+  @test1
+  Scenario Outline: Validate add and remove a task                      ?[90m# com/mahajana/runner/features/taskManagerTest.feature:42?[0m
+    ?[36mGiven ?[0m?[36muser Access Task manager application via browser?[0m
+    ?[36mWhen ?[0m?[36muser inputs &quot;&lt;email&gt;&quot; in the field &quot;email&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;password&gt;&quot; in the field &quot;password&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Login&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser should land on &quot;My day&quot; page?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskTitle&gt;&quot; in the field &quot;Task title&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskDescription&gt;&quot; in the field &quot;Task description&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Add&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser Remove the &quot;&lt;taskTitle&gt;&quot;?[0m
+    ?[36mThen ?[0m?[36muser should not see see &quot;&lt;taskTitle&gt;&quot; on the page?[0m
+
+    Examples: 
+Loading page selector for: My day
+
+  @test1 @test
+  Scenario Outline: Validate add and remove a task                       ?[90m# com/mahajana/runner/features/taskManagerTest.feature:57?[0m
+    ?[32mGiven ?[0m?[32muser Access Task manager application via browser?[0m               ?[90m# MyStepdefs.accessTaskManagerUrl()?[0m
+    ?[32mWhen ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1memail?[0m?[32m&quot;?[0m                         ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mpassword?[0m?[32m&quot;?[0m                       ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mLogin?[0m?[32m&quot; button?[0m                                        ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser should land on &quot;?[0m?[32m?[1mMy day?[0m?[32m&quot; page?[0m                                ?[90m# MyStepdefs.userShouldLandOnPage(String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mRemoveTask?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask title?[0m?[32m&quot;?[0m               ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mTask to be Removed?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask description?[0m?[32m&quot;?[0m ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mAdd?[0m?[32m&quot; button?[0m                                          ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser Remove the &quot;?[0m?[32m?[1mRemoveTask?[0m?[32m&quot;?[0m                                     ?[90m# MyStepdefs.removeTask(String)?[0m
+    ?[32mThen ?[0m?[32muser should not see see &quot;?[0m?[32m?[1mRemoveTask?[0m?[32m&quot; on the page?[0m                ?[90m# MyStepdefs.userShouldNotSeeOnThePage(String)?[0m
+
+  # Validate ALL Task page
+  @test1
+  Scenario Outline: Validate add and remove a task                      ?[90m# com/mahajana/runner/features/taskManagerTest.feature:62?[0m
+    ?[36mGiven ?[0m?[36muser Access Task manager application via browser?[0m
+    ?[36mWhen ?[0m?[36muser inputs &quot;&lt;email&gt;&quot; in the field &quot;email&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;password&gt;&quot; in the field &quot;password&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Login&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser should land on &quot;My day&quot; page?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskTitle&gt;&quot; in the field &quot;Task title&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskDescription&gt;&quot; in the field &quot;Task description&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Add&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser click on &quot;All Tasks&quot; Page?[0m
+    ?[36mThen ?[0m?[36muser should see &quot;All Tasks&quot; on the page?[0m
+    ?[36mAnd ?[0m?[36muser should see &quot;&lt;taskTitle&gt;&quot; on the page?[0m
+
+    Examples: 
+Loading page selector for: My day
+
+  @test1 @test
+  Scenario Outline: Validate add and remove a task                      ?[90m# com/mahajana/runner/features/taskManagerTest.feature:78?[0m
+    ?[32mGiven ?[0m?[32muser Access Task manager application via browser?[0m              ?[90m# MyStepdefs.accessTaskManagerUrl()?[0m
+    ?[32mWhen ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1memail?[0m?[32m&quot;?[0m                        ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mpassword?[0m?[32m&quot;?[0m                      ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mLogin?[0m?[32m&quot; button?[0m                                       ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser should land on &quot;?[0m?[32m?[1mMy day?[0m?[32m&quot; page?[0m                               ?[90m# MyStepdefs.userShouldLandOnPage(String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mAllPageTask?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask title?[0m?[32m&quot;?[0m             ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mTask for All page?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask description?[0m?[32m&quot;?[0m ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mAdd?[0m?[32m&quot; button?[0m                                         ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser click on &quot;?[0m?[32m?[1mAll Tasks?[0m?[32m&quot; Page?[0m                                  ?[90m# MyStepdefs.user_click_on_Page(String)?[0m
+    ?[32mThen ?[0m?[32muser should see &quot;?[0m?[32m?[1mAll Tasks?[0m?[32m&quot; on the page?[0m                        ?[90m# MyStepdefs.userShouldSeeOnThePage(String)?[0m
+    ?[32mAnd ?[0m?[32muser should see &quot;?[0m?[32m?[1mAllPageTask?[0m?[32m&quot; on the page?[0m                       ?[90m# MyStepdefs.userShouldSeeOnThePage(String)?[0m
+
+  # Validate Favourite Task page
+  @test1
+  Scenario Outline: Validate add and remove a task                      ?[90m# com/mahajana/runner/features/taskManagerTest.feature:83?[0m
+    ?[36mGiven ?[0m?[36muser Access Task manager application via browser?[0m
+    ?[36mWhen ?[0m?[36muser inputs &quot;&lt;email&gt;&quot; in the field &quot;email&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;password&gt;&quot; in the field &quot;password&quot;?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Login&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser should land on &quot;My day&quot; page?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskTitle&gt;&quot; in the field &quot;Task title&quot;?[0m
+    ?[36mAnd ?[0m?[36muser inputs &quot;&lt;taskDescription&gt;&quot; in the field &quot;Task description&quot;?[0m
+    ?[36mAnd ?[0m?[36muser make that task as Important?[0m
+    ?[36mAnd ?[0m?[36muser click &quot;Add&quot; button?[0m
+    ?[36mAnd ?[0m?[36muser click on &quot;Important Tasks&quot; Page?[0m
+    ?[36mThen ?[0m?[36muser should see &quot;Important Tasks&quot; on the page?[0m
+    ?[36mAnd ?[0m?[36muser should see &quot;&lt;taskTitle&gt;&quot; on the page?[0m
+
+    Examples: 
+Loading page selector for: My day
+
+  @test1 @test
+  Scenario Outline: Validate add and remove a task                 ?[90m# com/mahajana/runner/features/taskManagerTest.feature:100?[0m
+    ?[32mGiven ?[0m?[32muser Access Task manager application via browser?[0m         ?[90m# MyStepdefs.accessTaskManagerUrl()?[0m
+    ?[32mWhen ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1memail?[0m?[32m&quot;?[0m                   ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1muser?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mpassword?[0m?[32m&quot;?[0m                 ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mLogin?[0m?[32m&quot; button?[0m                                  ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser should land on &quot;?[0m?[32m?[1mMy day?[0m?[32m&quot; page?[0m                          ?[90m# MyStepdefs.userShouldLandOnPage(String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mMyFavTask?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask title?[0m?[32m&quot;?[0m          ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser inputs &quot;?[0m?[32m?[1mMy fav. Task?[0m?[32m&quot; in the field &quot;?[0m?[32m?[1mTask description?[0m?[32m&quot;?[0m ?[90m# MyStepdefs.userInputsInTheField(String,String)?[0m
+    ?[32mAnd ?[0m?[32muser make that task as Important?[0m                           ?[90m# MyStepdefs.makeTaskAsImportant()?[0m
+    ?[32mAnd ?[0m?[32muser click &quot;?[0m?[32m?[1mAdd?[0m?[32m&quot; button?[0m                                    ?[90m# MyStepdefs.userClick(String)?[0m
+    ?[32mAnd ?[0m?[32muser click on &quot;?[0m?[32m?[1mImportant Tasks?[0m?[32m&quot; Page?[0m                       ?[90m# MyStepdefs.user_click_on_Page(String)?[0m
+    ?[32mThen ?[0m?[32muser should see &quot;?[0m?[32m?[1mImportant Tasks?[0m?[32m&quot; on the page?[0m             ?[90m# MyStepdefs.userShouldSeeOnThePage(String)?[0m
+    ?[32mAnd ?[0m?[32muser should see &quot;?[0m?[32m?[1mMyFavTask?[0m?[32m&quot; on the page?[0m                    ?[90m# MyStepdefs.userShouldSeeOnThePage(String)?[0m
+
+5 Scenarios (?[32m5 passed?[0m)
+47 Steps (?[32m47 passed?[0m)
+0m58.411s
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 18/11/2020 10:03:58 PM</p>
+</div>
+</div>
+</body>
+</html>

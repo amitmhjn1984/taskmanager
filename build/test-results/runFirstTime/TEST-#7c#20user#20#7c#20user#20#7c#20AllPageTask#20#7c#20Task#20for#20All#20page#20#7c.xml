@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| user | user | AllPageTask | Task for All page |" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-11-18T09:03:43" hostname="NZWGTNLP39" time="2.687">
+  <properties/>
+  <testcase name="Given user Access Task manager application via browser" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="When user inputs &quot;user&quot; in the field &quot;email&quot;" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user inputs &quot;user&quot; in the field &quot;password&quot;" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user click &quot;Login&quot; button" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user should land on &quot;My day&quot; page" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user inputs &quot;AllPageTask&quot; in the field &quot;Task title&quot;" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user inputs &quot;Task for All page&quot; in the field &quot;Task description&quot;" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user click &quot;Add&quot; button" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user click on &quot;All Tasks&quot; Page" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="Then user should see &quot;All Tasks&quot; on the page" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="And user should see &quot;AllPageTask&quot; on the page" classname="| user | user | AllPageTask | Task for All page |" time="0.0"/>
+  <testcase name="classMethod" classname="| user | user | AllPageTask | Task for All page |" time="9.802"/>
+  <system-out><![CDATA[
+  Background:  ?[90m# com/mahajana/runner/features/taskManagerTest.feature:4?[0m
+Leaving Initialize
+Loading page selector for: LogIn
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 20043
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Nov 18, 2020 10:03:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

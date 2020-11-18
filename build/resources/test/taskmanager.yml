@@ -1,0 +1,26 @@
+---
+name: LogIn
+selector:
+Login to manage your tasks : 'mat-card-title'
+email: 'mat-input-0'
+password: 'mat-input-1'
+Login: 'button.login-field.mat-raised-button.mat-button-base.mat-primary'
+
+---
+name: My day
+selector:
+Task title : 'mat-input-2'
+Task description: 'mat-input-3'
+Task due date: 'mat-input-4'
+Add: 'button.form-field.mat-raised-button.mat-button-base.mat-primary'
+close: 'button.remove-icon.mat-icon.notranslate.material-icons.mat-icon-no-color'
+Important: 'mat-checkbox-label'
+checkBox: 'complete-checkbox.mat-checkbox.mat-accent'
+
+
+---
+
+
+name: All Tasks
+selector:
+

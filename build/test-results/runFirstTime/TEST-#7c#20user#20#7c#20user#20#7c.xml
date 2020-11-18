@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| user | user |" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-11-18T09:03:12" hostname="NZWGTNLP39" time="2.322">
+  <properties/>
+  <testcase name="Given user Access Task manager application via browser" classname="| user | user |" time="0.001"/>
+  <testcase name="When user inputs &quot;user&quot; in the field &quot;email&quot;" classname="| user | user |" time="0.0"/>
+  <testcase name="And user inputs &quot;user&quot; in the field &quot;password&quot;" classname="| user | user |" time="0.0"/>
+  <testcase name="And user click &quot;Login&quot; button" classname="| user | user |" time="0.0"/>
+  <testcase name="Then user should land on &quot;My day&quot; page" classname="| user | user |" time="0.002"/>
+  <testcase name="classMethod" classname="| user | user |" time="15.846"/>
+  <system-out><![CDATA[
+  Background:  ?[90m# com/mahajana/runner/features/taskManagerTest.feature:4?[0m
+Leaving Initialize
+Loading page selector for: LogIn
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 10216
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Nov 18, 2020 10:03:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
