@@ -25,4 +25,20 @@ Below are detailed usage of each file.
 4. Test Report will get generated at below location after execution gets completed.   
     target/cucumber-reports/report.html
     
+       
+***********Issue found***********
+Login Page-
+1) able to login using credentials which is not actual email id.
+
+Landing Page - 
+a.
+1) try to add task with task title as Blank "NULL" it will give messaged as Task title is required.
+2) Now give the task title but error message still disappear
+b. Able to add same name task..
+My day Page :-
+1) without adding any task, My day page shows a task (Test Task 1)
+2) When adding task along with Due date, its not allowing task to get added.
+without due date, it works good.    
+    
+    
     
